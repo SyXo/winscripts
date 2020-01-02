@@ -5,8 +5,8 @@ After repeatedly using the command prompt there were somethings I notice I was r
      ```
       Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
      ```
-     Reboot system afterwards
-2. Download Ubuntu 18.04 from the App store and follow installation instructions. When complete update and upgrade apt packages if needed
+2. Reboot
+3. Download Ubuntu 18.04 from the App store and follow installation instructions. When complete update and upgrade apt packages if needed
 ___
 ## Scripts
 ### cdd
@@ -64,4 +64,4 @@ Example usage:
   2wav song.mp3
   ``` 
   - Install ffmpeg from [here](https://www.ffmpeg.org/download.html#build-windows) (I can't remember why, but I went through the trouble of manually downloading the windows version rather than just using `wsl sudo apt install -y ffmpeg`. Maybe I was having some unique bug or something?)
-  - Extract folder and folder to PATH
+  - Extract folder and add folder to PATH
