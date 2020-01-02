@@ -76,7 +76,7 @@ Example usage:
   rd
   ```
 ### cp2rd
-scp  a local file to a remote device. Requires some configuration
+scp  a local file to a remote device. Uses scp's r flag, which allows copying folders. Requires some configuration
   - Get pem file for remote device and set PEM_FILE in script to that file's location
   - set DEVICE to the device's username and ip addres e.g (pi@10.0.0.2)
 
@@ -85,7 +85,7 @@ Example usage (copy a picture to home directory):
   cp2rd profile-pic.jpg ~
   ```
 ### cpfromrd
-scp a remote device's file to local machine. Requires some configuration
+scp a remote device's file to local machine. Uses scp's r flag, which allows copying folders. Requires some configuration
   - Get pem file for remote device and set PEM_FILE in script to that file's location
   - set DEVICE to the device's username and ip addres e.g (pi@10.0.0.2)
 
