@@ -7,6 +7,7 @@ After repeatedly using the command prompt there were somethings I notice I was r
      ```
 2. Reboot
 3. Download Ubuntu 18.04 from the App store and follow installation instructions. When complete update and upgrade apt packages if needed
+4. Add this directory to PATH
 ___
 ## Scripts
 ### cdd
