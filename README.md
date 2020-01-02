@@ -66,3 +66,30 @@ Example usage:
   ``` 
   - Install ffmpeg from [here](https://www.ffmpeg.org/download.html#build-windows) (I can't remember why, but I went through the trouble of manually downloading the windows version rather than just using `wsl sudo apt install -y ffmpeg`. Maybe I was having some unique bug or something?)
   - Extract folder and add folder to PATH
+### rd
+ssh into a remote device. Requires some configuration
+  - ssh into device using a pem file. Get the pem file and set PEM_FILE in script to that file's location
+  - set DEVICE to the device's username and ip addres e.g (pi@10.0.0.2)
+
+Example usage:
+  ```
+  rd
+  ```
+### cp2rd
+scp  a local file to a remote device. Requires some configuration
+  - Get pem file for remote device and set PEM_FILE in script to that file's location
+  - set DEVICE to the device's username and ip addres e.g (pi@10.0.0.2)
+
+Example usage (copy a picture to home directory):
+  ```
+  cp2rd profile-pic.jpg ~
+  ```
+### cpfromrd
+scp a remote device's file to local machine. Requires some configuration
+  - Get pem file for remote device and set PEM_FILE in script to that file's location
+  - set DEVICE to the device's username and ip addres e.g (pi@10.0.0.2)
+
+Example usage (copy bash config file to current directory:
+  ```
+  cpfromrd ~/.bashrc .\
+  ```
