@@ -1,4 +1,4 @@
 @echo off
-set PEM_FILE=''
+set ID_FILE=''
 set DEVICE=''
-ssh -i %PEM_FILE% %DEVICE% 
+ssh -i %ID_FILE% %DEVICE% 

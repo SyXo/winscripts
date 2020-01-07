@@ -41,7 +41,8 @@ if %result:ms=% GTR %maxPing% (
 	start "" "%leagueClient%"
 )
 rem msg user with ping results and exit
-msg %username% %pingMsg%
+rem ping message was kinda annoying
+rem msg %username% %pingMsg%
 
 rem delete tempfile and suppress output
 del  /q %tempFile% > nul
